@@ -6,7 +6,7 @@ import time
 from datetime import datetime
 import pytz  # Para conversão de fuso horário
 
-st.title("🛰️ Posição Atual da ISS")
+st.title("🛰️🌍 Posição Atual da ISS 🚀🧑‍🚀")
 
 # Criando um espaço para atualizar os dados
 map_placeholder = st.empty()
@@ -52,7 +52,7 @@ while True:
 
         # Renderizando o mapa no Streamlit
         with map_placeholder.container():
-            folium_static(mapa)
+            folium_static(mapa, width=700, height=700)
 
         # Aguardando antes de atualizar novamente
         time.sleep(10)
